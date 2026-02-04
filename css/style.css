@@ -34,7 +34,7 @@ header {
 nav ul{
     display: flex;
     
-    gap: 10px;
+    gap: 40px;
     cursor: pointer;
 }
 
@@ -107,3 +107,74 @@ nav ul{
     }
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.hero {
+    height: 800px;
+    background-image: url(imagem/c1.png);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;    
+    inset: 0;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn-agendar {
+    display: inline-block;
+    
+    padding: 10px 10px ;
+    margin-top: 20px;
+    border-radius: 14px;
+    
+
+    background-color: #E07F00;
+    color: white;
+
+    font-size: #E07F00;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    transition: 
+        background-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+.btn-agendar:hover{
+    background-color: #e07f0093;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .hero-content{
+        display: flex;
+        
+    }
+}
