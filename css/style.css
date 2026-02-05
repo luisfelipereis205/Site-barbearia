@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #023E73;
+    background-color: #000000f0;
     color: white;
     font-family: "Oswald", sans-serif ;
     font-size: 16px;
@@ -36,6 +36,14 @@ nav ul{
     
     gap: 40px;
     cursor: pointer;
+    font-weight: 900;
+}
+
+
+nav ul li:hover {
+    color: #E07F00; 
+    transform: translateY(-1px); /* sobe um pouco */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {
@@ -115,7 +123,7 @@ a {
 
 .hero {
     height: 800px;
-    background-image: url(imagem/c1.png);
+    background-image: url(imagem/c3.png);
     background-size: cover;
     background-position:center;
     position: relative;
@@ -124,7 +132,7 @@ a {
 .overlay {
     position: absolute;    
     inset: 0;
-    background: rgb(0, 0, 0, 0.6);
+    background: rgb(0, 0, 0, 0.90);
 }
 
 .hero-content {
@@ -139,42 +147,60 @@ a {
     align-items: center;
 }
 
+.hero-content p {
+    letter-spacing: 2px ;
+}
+
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
+.hero-content h1 .luck {
+    color: #E07F00;
+    text-shadow: 1px 1px 75px #E07F00;
+}
+
 .btn-agendar {
     display: inline-block;
-    
-    padding: 10px 10px ;
-    margin-top: 20px;
-    border-radius: 14px;
-    
-
-    background-color: #E07F00;
-    color: white;
-
-    font-size: #E07F00;
-    font-weight: 500;
-
+    padding: 10px 26px;
+    background-color: #E07F00; /* dourado/barbearia */
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
+    border-radius: 6px; /* levemente arredondado */
+    border: none;
+    cursor: pointer;
+    margin-top: 19px;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    /* sombra suave (drop-shadow) */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
+    /* transições suaves */
     transition: 
-        background-color 0.25s ease,
-        transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-agendar:hover{
-    background-color: #e07f0093;
-    transform: translateY(-1px);
+    background-color: #e07f007d; /* levemente mais claro */
+    transform: translateY(-3px); /* sobe um pouco */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 600px) {
-    .hero-content{
-        display: flex;
-        
+    .hero-content h1{
+        font-size: 65px;
+        margin: 8px;
+    }
+
+    .hero-content p{
+    margin: 8px;
     }
 }
