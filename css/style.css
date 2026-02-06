@@ -62,7 +62,7 @@ nav ul li:hover {
 .logo {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 800;
   font-style: normal;
 
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
@@ -122,11 +122,21 @@ a {
 
 
 .hero {
-    height: 800px;
+    height: 100vh;
     background-image: url(imagem/c3.png);
     background-size: cover;
     background-position:center;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .hero {
+    min-height:100svh;
+    background-image: url(imagem/c3.png);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    }
 }
 
 .overlay {
