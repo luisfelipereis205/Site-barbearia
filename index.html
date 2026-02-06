@@ -1,88 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Menor Barbearia</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <span class="menor">Menor</span>
-            <span class="barbearia">Barbearia</span>
-        </div>
+      <div class="logo">
+        <span class="menor">Menor</span>
+        <span class="barbearia">Barbearia</span>
+      </div>
 
-        <div class="menu-hamburguer" id="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="menu-hamburguer" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-        <nav id="nav">
-            <div class="list">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="agendamento">Agendamento</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav id="nav">
+        <div class="list">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="agendamento">Agendamento</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="overlay"></div>
+      <section class="hero">
+        <div class="overlay"></div>
 
-            <div class="hero-content">
-                <h1>Aqui é régua, não é <span class="luck">sorte.</span></h1>
-                <p>Corte na régua e alinhado. Chegue no padrão que o seu corre exige.</p>
-                <a href="#agendamento"><button class="btn-agendar">AGENDAR</button></a>
-            </div>
-        </section>
+        <div class="hero-content">
+          <h1>Aqui é régua, não é <span class="luck">sorte.</span></h1>
+          <p>
+            Corte na régua e alinhado. Chegue no padrão que o seu corre exige.
+          </p>
+          <a href="#agendamento"
+            ><button class="btn-agendar">AGENDAR</button></a
+          >
+        </div>
+      </section>
 
-        <div class="servicos">
-           <div class="text-servicos">
-                <h2>Serviços</h2>
-           </div>
+      <section class="servicos">
+        <div class="text-servicos">
+          <h2>Serviços</h2>
         </div>
 
         <div class="list-servicos">
-            <ul>
-                <li>Corte + Subrancelha</li>
-                <p>R$ 30,00</p>
-                
-                <li>Barba</li>
-                <p>R$ 15,00</p>
-                
-                <li>Cavanhaque</li>
-                <p>R$ 15,00</p>
-                
-                <li>corte + Luzes + sobrancelha e bigode</li>
-                <p>R$ 80,00</p>
-                
-                <li>Corte + pigmentação + sobrancelha e Bigode</li>
-                <p>R$ 45,00</p>
-                
-                <li>Corte + Platinado + Sobrancelha e Bigode</li>
-                <p>R$ 100,00</p>
-                
-                <li>Corte + REFLEXO + sobrancelha e bigode</li>
-                <p>R$ 80,00</p>
-                
-                <li>Pezinho, barba e sobrancelha</li>
-                <p>R$ 25,00</p>
-                
-                <li>Sobrancelha+bigode</li>
-                <p>R$ 5,00</p>
-            </ul>
-           </div>
+          <ul>
+            <div class="servico-item">
+                <li class="text-name">Corte + Subrancelha</li>
+                <p class="text-price">R$ 30,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Barba</li>
+                <p class="text-price">R$ 15,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Cavanhaque</li>
+                <p class="text-price">R$ 15,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Corte + Luzes + sobrancelha e bigode</li>
+                <p class="text-price">R$ 80,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Corte + pigmentação + sobrancelha e Bigode</li>
+                <p class="text-price">R$ 45,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Corte + Platinado + Sobrancelha e Bigode</li>
+                <p class="text-price">R$ 100,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Corte + REFLEXO + sobrancelha e bigode</class>
+                <p class="text-price">R$ 80,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Pezinho, barba e sobrancelha</li>
+                <p class="text-price">R$ 25,00</p>
+            </div>
+
+            <div class="servicos-item">
+                <li class="text-name">Sobrancelha + bigode</li>
+                <p class="text-price">R$ 5,00</p>
+            </div>
+          </ul>
+        </div>
+      </section>
     </main>
     <script src="script/script.js"></script>
-</body>
+  </body>
 </html>

@@ -204,3 +204,45 @@ a {
     margin: 8px;
     }
 }
+
+.servicos {
+    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
+}
+
+.text-servicos{
+
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Teko", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+
+
+}
+
+.list-servicos {
+    font-size: 24px;
+
+    display: flex;
+    margin: 15px;
+}
+
+.list-servicos .text-price {
+    font-size: 13px;
+
+    color: #E07F00;
+    
+    margin-bottom: 35px;
+    
+}
+
+.list-servicos .text-name {
+    margin-bottom: 20px;
+}
+
