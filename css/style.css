@@ -216,7 +216,14 @@ a {
 }
 
 .servicos {
-    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 45px;
+
+    padding-bottom: 10px;
+    padding-top: 20px;
+   
 }
 
 .text-servicos{
@@ -230,17 +237,15 @@ a {
     align-items: center;
     
     margin-bottom: 30px;
-    margin-top: 30px;
-
-
-
+    margin-top: 40px;
 }
 
 .list-servicos {
     font-size: 24px;
 
-    display: flex;
+    display: block;
     margin: 15px;
+    margin-left: 100px;
 }
 
 .list-servicos .text-price {
@@ -248,14 +253,24 @@ a {
 
     color: #E07F00;
     
-    margin-bottom: 35px;
+    display: flex;
+    
     
 }
 
 .list-servicos .text-name {
     margin-bottom: 20px;
+
+    display: flex;
 }
 
-.servicos-item {
+.list-servicos .servico-info {
+    font-size: 13px;
+    color: #ffffff;
 
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    margin-bottom: 10px;
 }
+
