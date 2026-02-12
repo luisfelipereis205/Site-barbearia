@@ -1,51 +1,55 @@
+/* ================= RESET GLOBAL ================= */
+/* Remove estilos padrões do navegador */
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    list-style: none;
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura */
+    list-style: none; /* Remove marcadores de lista */
 }
-
+/* ================= ESTILO BASE DO SITE ================= */
 body {
     background-color: #000000f0;
     color: white;
     font-family: "Oswald", sans-serif ;
     font-size: 16px;
 }
-
+/* ================= HEADER ================= */
+/* Barra fixa no topo */
 header {
 
     background-color: #000000 ;
 
     font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 
-    position: fixed;
+    position: fixed; /* Fixa no topo */
     top: 0;
     padding: 20px 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
-    user-select: none;
+    z-index: 3; /* Fica acima de outros elementos */
+    user-select: none; /* Impede seleção de texto */
     
     font-weight: 600;
 }
 
+/* ================= MENU DESKTOP ================= */
 nav ul{
-    display: flex;
+    display: flex; 
     
-    gap: 40px;
+    gap: 40px; /* Espaçamento entre itens */
     cursor: pointer;
     font-weight: 900;
 }
 
-
+/* Efeito hover nos itens do menu */
 nav ul li:hover {
     color: #E07F00; 
     transform: translateY(-1px); /* sobe um pouco */
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
-
+/* ================= LOGO ================= */
 .logo {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
@@ -55,18 +59,18 @@ nav ul li:hover {
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
 
 }
-
+/* Destaque da palavra "barbearia" */
 .barbearia {
     color: #E07F00; 
 }
-
+/* ================= MENU HAMBÚRGUER ================= */
 .menu-hamburguer {
-    display: none;
-    flex-direction: column;
+    display: none; /* Escondido no desktop */
+    flex-direction: column; /* Barrinhas empilhadas */
     gap: 5px;
     cursor: pointer;
 }
-
+/* Barrinhas do hambúrguer */
 .menu-hamburguer span {
     width: 25px;
     height: 3px;
@@ -74,29 +78,30 @@ nav ul li:hover {
     border-radius: 2px;
     transition: 0.3s ;
 }
-
+/* Remove sublinhado dos links */
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Herda cor do elemento pai */
 }
 
+/* ================= HERO (BANNER PRINCIPAL) ================= */
 .hero {
-    height: 100vh;
+    height: 100vh; /* Altura total da tela */
     background-image: url(imagem/c3.png);
-    background-size: cover;
+    background-size: cover; /* Imagem cobre toda a área */
     background-position:center;
-    position: relative;
+    position: relative; /* Base para overlay */
 }
-
+/* Camada escura sobre a imagem */
 .overlay {
     position: absolute;    
-    inset: 0;
+    inset: 0; /* Ocupa toda a área */
     background: rgb(0, 0, 0, 0.90);
 }
-
+/* Conteúdo central do hero */
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Fica acima do overlay */
     
 
     height: 100%;
@@ -105,21 +110,22 @@ a {
     justify-content: center;
     align-items: center;
 }
-
+/* Espaçamento das letras do parágrafo */
 .hero-content p {
     letter-spacing: 2px ;
 }
 
+/* Título principal */
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
-
+/* Destaque da palavra específica dentro do h1 */
 .hero-content h1 .luck {
     color: #E07F00;
     text-shadow: 1px 1px 75px #E07F00;
 }
-
+/* ================= BOTÃO PRINCIPAL ================= */
 .btn-agendar {
     display: inline-block;
     padding: 10px 26px;
@@ -147,12 +153,13 @@ a {
     letter-spacing: 1px;
 }
 
+/* Efeito hover do botão principal */
 .btn-agendar:hover{
     background-color: #e07f007d; /* levemente mais claro */
     transform: translateY(-3px); /* sobe um pouco */
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
-
+/* ================= SEÇÃO SERVIÇOS ================= */
 .servicos {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
     margin-left: 300px;
@@ -163,7 +170,7 @@ a {
     padding-top: 20px;
    
 }
-
+/* Título da seção serviços */
 .text-servicos{
 
     font-size: 30px;
@@ -177,7 +184,7 @@ a {
     margin-bottom: 30px;
     margin-top: 40px;
 }
-
+/* Lista de serviços */
 .list-servicos {
     font-size: 24px;
 
@@ -185,7 +192,7 @@ a {
     margin: 15px;
     margin-left: 100px;
 }
-
+/* Preço do serviço */
 .list-servicos .text-price {
     font-size: 13px;
 
@@ -195,13 +202,13 @@ a {
     
     
 }
-
+/* Nome do serviço */
 .list-servicos .text-name {
     margin-bottom: 20px;
 
     display: flex;
 }
-
+/* Informações adicionais do serviço */
 .list-servicos .servico-info {
     font-size: 13px;
     color: #ffffff;
@@ -212,7 +219,7 @@ a {
     margin-bottom: 25px;
     
 }
-
+/* borda abaixo do preço serviço */
 .servicos-item {
 
     margin-bottom: 20px;
@@ -220,19 +227,20 @@ a {
     border-bottom: 1px solid #ffffff42;
     width: 90%;
 }
-
+/* Remove borda do último item */
 .servicos-item:last-child {  /* remove a borda do último item */
     border-bottom: none;   
 }
-
+/* ================= BOTÃO DOS SERVIÇOS ================= */
 .btn-agendar-servico {
     font-size: 12px;
     color: #ffffff;
     letter-spacing: 2px;
+    font-weight: 600;
     
     padding: 8px 12px;
     
-    margin-left: auto;
+    margin-left: auto;/* Empurra botão para direita */
 
     border: 1px solid white;
     border-radius: 6px;
@@ -248,13 +256,14 @@ a {
     text-transform: uppercase;
     ;
 } 
-
+/* Hover botão serviço */
 .btn-agendar-servico:hover {
     background-color: #E07F00; /* dourado/barbearia */
     transform: translateY(-2px); /* sobe um pouco */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* ================= RESPONSIVIDADE - TABLET ================= */
 @media (min-width: 768px) and (max-width: 1024px) {
     nav ul{
     gap: 15px;
@@ -275,7 +284,7 @@ a {
     gap: 15px;
     }
 }
-
+/* ================= RESPONSIVIDADE - MOBILE ================= */
 @media (max-width: 600px) {
     nav ul {
         display: none;
