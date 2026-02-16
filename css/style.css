@@ -346,8 +346,8 @@ a {
     }
     
     .servicos {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     }
 
     .list-servicos {
@@ -356,9 +356,60 @@ a {
     }
 
     .list-servicos .servico-info {
-    gap: 15px;
+    gap: 15px;        
     }
+
+    /* ================= SOBRE RESPONSIVO ================= */
+    .sobre {
+    background-color: #e07f00;
+    min-height: 60vh;
+    }
+
+    .text-sobre {
+    
+    margin-top: 10px;
+    }
+
+    .descricao-sobre-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    .img-sobre {
+    border-radius: 10px;
+    
+    height: 700px;
+    width: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .descricao-sobre {
+    display: flex;
+    margin-right: 0;
+    flex-direction: column;
+
+    }
+
+    .titulo-descricao {
+    display: flex;
+    margin-left: 0;
+    justify-content: left;
+    align-items: left;
+    }
+
 }
+
+
 /* ================= RESPONSIVIDADE - MOBILE ================= */
 @media (max-width: 600px) {
     nav ul {
