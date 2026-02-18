@@ -385,8 +385,8 @@ a {
     .img-sobre {
     border-radius: 10px;
     
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
 
     display: flex;
     align-items: center;
@@ -397,7 +397,8 @@ a {
     display: flex;
     margin-right: 0;
     flex-direction: column;
-
+    
+    width: 600px;
     }
 
     .titulo-descricao {
@@ -473,4 +474,66 @@ a {
     .btn-agendar-servico {
     padding: 6px 10px;
     font-size: 10px;}
+
+    /* ================= SOBRE RESPONSIVO ================= */
+    
+    .sobre {
+    background-color: #e07f00;
+    min-height: 60vh;
+
+    }
+    
+    .text-sobre {
+    
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    }
+
+    .descricao-sobre-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    height: auto;
+    
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 40px;
+    }
+
+    .img-sobre {
+    border-radius: 10px;
+    
+    max-width: 90%;
+    height: auto;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    .descricao-sobre {
+    font-size: 1rem;
+    
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    line-height: 2.2rem;
+
+    }
+
+    .titulo-descricao {
+    display: flex;
+    margin-left: 0;
+    justify-content: left;
+    align-items: left;
+    }
+    
 }
