@@ -23,7 +23,7 @@ header {
 
     position: fixed; /* Fixa no topo */
     top: 0;
-    padding: 20px 20px;
+    padding: 20px 2%;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -117,7 +117,7 @@ a {
 
 /* Título principal */
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 /* Destaque da palavra específica dentro do h1 */
@@ -162,13 +162,11 @@ a {
 /* ================= SEÇÃO SERVIÇOS ================= */
 .servicos {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 45px;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 20px 20px;
+    
 
-    padding-bottom: 10px;
-    padding-top: 20px;
-   
 }
 /* Título da seção serviços */
 .text-servicos{
@@ -214,7 +212,8 @@ a {
     color: #ffffff;
 
     display: flex;
-    gap: 150px;
+    gap: 30px;
+    flex-wrap: wrap; /* permite quebrar a linha se necessário */
     align-items: center;
     margin-bottom: 25px;
     
@@ -294,11 +293,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 90px;
 
+    
     padding-bottom: 80px;
-    margin-top: 100px;
-    margin-left: 300px;
+    margin: 100px auto 0 auto;
     
 }
 .img-sobre {
@@ -312,7 +311,7 @@ a {
 
 .img-sobre:hover {
     transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 .titulo-descricao {
@@ -332,9 +331,9 @@ a {
 
 
     
-    margin-right: 300px; 
+    margin-right: 10px; 
     text-align: left;
-    max-width: 700px;
+    max-width: 600px;
     }
 
 
@@ -385,8 +384,9 @@ a {
     .img-sobre {
     border-radius: 10px;
     
-    height: 600px;
-    width: 600px;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
 
     display: flex;
     align-items: center;
@@ -412,7 +412,7 @@ a {
 
 
 /* ================= RESPONSIVIDADE - MOBILE ================= */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     nav ul {
         display: none;
     }
@@ -457,9 +457,20 @@ a {
     margin: 8px;
     }
 
+    .btn-agendar {
+        margin-top: 40px;
+    }
+
     .servicos {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+    .servicos-item {
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #ffffff42;
+    width: 100%;
     }
 
     .list-servicos {
@@ -469,11 +480,15 @@ a {
 
     .list-servicos .servico-info {
     gap: 15px;
+    display: flex;
     }
 
     .btn-agendar-servico {
     padding: 6px 10px;
-    font-size: 10px;}
+    font-size: 10px;
+    margin-left: auto;
+    transform: translateX(1px);
+    }
 
     /* ================= SOBRE RESPONSIVO ================= */
     
