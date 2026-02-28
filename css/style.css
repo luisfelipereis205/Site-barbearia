@@ -275,7 +275,7 @@ a {
 
 .text-sobre {
     font-family: "Teko", sans-serif;
-    font-size: 30px;
+    font-size: 2em;
 
     align-items: center;
     justify-content: center;
@@ -342,7 +342,7 @@ a {
 /* Título da seção Galeria */
 .text-galeria{
 
-    font-size: 30px;
+    font-size: 1.5em;
     letter-spacing: 2px;
     font-family: "Teko", sans-serif;
 
@@ -368,6 +368,96 @@ a {
     border-radius: 8px;
 
     position: relative;
+}
+
+/* ================= AGENDAMENTO ================= */
+
+.agendamento {
+    background-color: #e07f00;
+
+    margin: 50px 0 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    
+
+}
+
+.text-agendamento {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-family: "Teko", sans-serif;
+    
+    margin-top: 30px;
+}
+
+.container-frm {
+    background: #000;
+    color: #fff;
+
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+
+   
+}
+
+.container-frm form {
+    font-family: "Oswald", sans-serif ;
+
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    
+}
+
+
+.container-frm input, .container-frm select {
+    padding: 8px;
+    
+    border-radius: 6px;
+    border: none;
+    font-size: 12px;
+}
+
+.linha {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.linha input {
+    flex: 1;
+}
+
+.container-frm button {
+    color: #ffffff;
+    background: #E07F00;
+    
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.container-frm button:hover {
+    transform: scale(1.05);
+    color: #000;
 }
 
 
