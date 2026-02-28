@@ -315,6 +315,7 @@ a {
 }
 
 .titulo-descricao {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     margin-bottom: 20px;
     color: #E07F00;
@@ -376,88 +377,53 @@ a {
     background-color: #e07f00;
 
     margin: 50px 0 50px 0;
+    padding: 90px 0 ;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 50px;
+    
+    
     
 
 }
 
 .text-agendamento {
-    font-size: 1.5em;
+    font-size: 3em;
     letter-spacing: 2px;
     font-family: "Teko", sans-serif;
     
-    margin-top: 30px;
+    margin-bottom: 1px;
 }
 
-.container-frm {
-    background: #000;
-    color: #fff;
+.frase-impacto {
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
 
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-
-    padding: 40px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 500px;
-    text-align: left;
-
-   
+    letter-spacing: 1.5px;
 }
 
-.container-frm form {
-    font-family: "Oswald", sans-serif ;
-
-
-    margin-top: 20px;
+.container-agendamento {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-
-    
-}
-
-
-.container-frm input, .container-frm select {
-    padding: 8px;
-    
-    border-radius: 6px;
-    border: none;
-    font-size: 12px;
-}
-
-.linha {
-    display: flex;
-    gap: 50px;
+    width: 50%;
     align-items: center;
-
+    justify-content: center;
 }
 
-.linha input {
-    flex: 1;
-}
+.paragrafo-agendamento {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
 
-.container-frm button {
-    color: #ffffff;
-    background: #E07F00;
-    
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 900;
-    cursor: pointer;
-    transition: 0.3s;
+    font-style: normal;
 
-}
-
-.container-frm button:hover {
-    transform: scale(1.05);
-    color: #000;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
