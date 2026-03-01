@@ -265,7 +265,7 @@ a {
 /* ================= SOBRE ================= */
 
 .sobre {
-    background-color: #e07f00;
+    background-color: #e07f00dc;
     min-height: 60vh;
 
     margin-top: 80px;
@@ -297,7 +297,7 @@ a {
 
     
     padding-bottom: 80px;
-    margin: 100px auto 0 auto;
+    margin: 40px auto 0 auto;
     
 }
 .img-sobre {
@@ -316,27 +316,34 @@ a {
 
 .titulo-descricao {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 1.8em;
+    color: white;
     margin-bottom: 20px;
-    color: #E07F00;
-    font-weight: bold;
+    font-weight: 700;
+    width: 100%;
+    max-width: 800px;
+    line-height: normal;
+    letter-spacing: 1px;
 }
 .descricao-sobre {
-    
-    font-size: 18px;
-    background-color: #000000f0;
+
+    color: #000000;
+
     padding: 50px;
     border-radius: 10px;
     letter-spacing: 1px;
     line-height: 1.8;
-
-
     
     margin-right: 10px; 
     text-align: left;
     max-width: 600px;
     }
 
+.descricao-sobre p {
+    font-weight: 450;
+    width: 100%;
+    
+}
 
 /* ================= GALERIA ================= */
 
@@ -374,7 +381,7 @@ a {
 /* ================= AGENDAMENTO ================= */
 
 .agendamento {
-    background-color: #e07f00;
+    background-color: #e07f00dc;
 
     margin: 50px 0 50px 0;
     padding: 90px 0 ;
@@ -400,7 +407,7 @@ a {
     
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
 
     letter-spacing: 1.5px;
@@ -415,8 +422,16 @@ a {
 }
 
 .paragrafo-agendamento {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
 
+    font-size: 18px;
+    
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
+    
+    letter-spacing: 1px;
+    line-height: 1.8;
+    
+    
     font-style: normal;
 
     display: flex;
@@ -627,23 +642,21 @@ a {
     justify-content: center;
 
     }
-
+    
     .descricao-sobre {
-    font-size: 1rem;
     
     display: flex;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
     flex-direction: column;
     line-height: 2.2rem;
 
     }
 
     .titulo-descricao {
-    display: flex;
-    margin-left: 0;
-    justify-content: left;
-    align-items: left;
+    font-size: 1.5em;
+    font-weight: 650;
+    width: 350px;
     }
     
 }
