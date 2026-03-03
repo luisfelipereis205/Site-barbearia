@@ -6,6 +6,10 @@
     box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura */
     list-style: none; /* Remove marcadores de lista */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 /* ================= ESTILO BASE DO SITE ================= */
 body {
     background-color: #000000f0;
@@ -331,7 +335,7 @@ a {
 
     padding: 50px;
     border-radius: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     line-height: 1.8;
     
     margin-right: 10px; 
@@ -340,8 +344,9 @@ a {
     }
 
 .descricao-sobre p {
-    font-weight: 450;
+    font-weight: 400;
     width: 100%;
+    font-family: "Oswald", sans-serif
     
 }
 
@@ -350,7 +355,7 @@ a {
 /* Título da seção Galeria */
 .text-galeria{
 
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 2px;
     font-family: "Teko", sans-serif;
 
@@ -389,28 +394,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-    
 
 }
 
 .text-agendamento {
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: 2px;
     font-family: "Teko", sans-serif;
     
-    margin-bottom: 1px;
+    margin-bottom: -3px;
 }
 
 .frase-impacto {
     
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    color: #000000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
-
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
     letter-spacing: 1.5px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+
 }
 
 .container-agendamento {
@@ -419,29 +423,156 @@ a {
     width: 50%;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .paragrafo-agendamento {
 
-    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+
+    font-size: 1em;
     
-    color: #000000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
+    color: #ffffff;
     
-    letter-spacing: 1px;
-    line-height: 1.8;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
     
     
-    font-style: normal;
+    font-weight: 300;
 
     display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
+    width: 53%;
     text-align: center;
+
+
+}
+
+.btn-agendamento {
+    
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+    padding: 8px 12px; 
+
+    border: 1px solid white;
+    border-radius: 6px;
+    
+    background-color: transparent;
+
+    margin-top: 30px;
+
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+
+    text-transform: uppercase;
+}
+
+.btn-agendamento:hover{
+    
+
+    background-color: #ff9100; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 
+
+.horario {
+    max-width: 600px;
+    margin: 50px auto;
+
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.horario h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-family: "Teko", sans-serif;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.list-horario li {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.dia {
+    font-weight: 500;
+}
+
+.hora {
+    color: #E07F00;
+}
+
+/* ===== footer ========*/
+.footer {
+    background-color: #111;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1; /* */
+    min-width: 220px;
+}
+
+.footer-logo span {
+    color: #E07F00;
+}
+
+.footer-slogan {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 28px;
+    transition: transform 0.2s ease, filter 0.2s ease;/**/
+}
+
+.footer-social img:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.2);/**/
+}
+
+.footer-pagamento {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-pagamento li {
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
 /* ================= RESPONSIVIDADE - TABLET ================= */
 @media (min-width: 768px) and (max-width: 1024px) {
     nav ul{
