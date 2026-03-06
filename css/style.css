@@ -5,17 +5,21 @@
     padding: 0px;
     box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura */
     list-style: none; /* Remove marcadores de lista */
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
+html{
+    overflow-x: hidden;
+}
 /* ================= ESTILO BASE DO SITE ================= */
 body {
     background-color: #000000f0;
     color: white;
     font-family: "Oswald", sans-serif ;
     font-size: 16px;
+    overflow-x: hidden;
 }
 /* ================= HEADER ================= */
 /* Barra fixa no topo */
@@ -36,6 +40,8 @@ header {
     user-select: none; /* Impede seleção de texto */
     
     font-weight: 600;
+
+    overflow: hidden; /*esconde tudo que ultrapassar os limites do elemento.*/
 }
 
 /* ================= MENU DESKTOP ================= */
@@ -116,12 +122,14 @@ a {
 }
 /* Espaçamento das letras do parágrafo */
 .hero-content p {
-    letter-spacing: 2px ;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 20px;
 }
 
 /* Título principal */
 .hero-content h1 {
-    font-size: 60px;
+    font-size: clamp(3.5rem, 6vw, 60px);
     margin-bottom: 10px;
 }
 /* Destaque da palavra específica dentro do h1 */
@@ -191,8 +199,8 @@ a {
     font-size: 24px;
 
     display: block;
+    margin-left: 0;
     margin: 15px;
-    margin-left: 100px;
 }
 /* Preço do serviço */
 .list-servicos .text-price {
@@ -269,9 +277,8 @@ a {
 /* ================= SOBRE ================= */
 
 .sobre {
-    background-color: #e07f00dc;
-    min-height: 60vh;
-
+    background-color: #e07f00;
+    width: 100%;
     margin-top: 80px;
     padding-top: 40px;
     
@@ -285,6 +292,8 @@ a {
     justify-content: center;
     display: flex;
     margin-top: 30px;
+
+   
     
 }
 
@@ -310,7 +319,7 @@ a {
     height: 550px;
     
     box-shadow: rgba(0, 0, 0, 0.288) -10px 5px 10px;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-sobre:hover {
@@ -374,9 +383,12 @@ a {
 }
 
 .list-galeria {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    
+
     margin: 10px;
     width: 70%;
     
@@ -394,7 +406,7 @@ a {
 /* ================= AGENDAMENTO ================= */
 
 .agendamento {
-    background-color: #e07f00dc;
+    background-color: #e07f00;
 
     margin: 50px 0 50px 0;
     padding: 90px 0 ;
@@ -428,7 +440,7 @@ a {
 .container-agendamento {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -449,7 +461,8 @@ a {
     font-weight: 300;
 
     display: flex;
-    width: 53%;
+    max-width: 500px;
+    width: 90%;
     text-align: center;
 
 
@@ -511,7 +524,7 @@ a {
     max-width: 600px;
     margin: 50px auto;
 
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 80px;
 }
 
@@ -662,6 +675,8 @@ a {
     width: 600px;
     }
 
+    
+
     .titulo-descricao {
     display: flex;
     margin-left: 0;
@@ -710,7 +725,7 @@ a {
     }
 
     .hero-content h1{
-        font-size: 65px;
+        font-size: clamp(3.5rem, 6vw, 60px);
         margin: 8px;
     }
 
@@ -725,6 +740,8 @@ a {
 
     .btn-agendar {
         margin-top: 40px;
+        font-size: 16px;
+        padding: 10px 20px;
     }
 
     .servicos {
@@ -761,15 +778,16 @@ a {
     .sobre {
     background-color: #e07f00;
     min-height: 60vh;
-
+    
     }
     
     .text-sobre {
     
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 20px;
-    
+    display: flex;
+    align-items: center;
     }
 
     .descricao-sobre-container{
@@ -792,6 +810,7 @@ a {
     
     max-width: 90%;
     height: auto;
+    width: 100%;
 
     display: block;
     align-items: center;
@@ -814,7 +833,47 @@ a {
     font-weight: 650;
     width: 350px;
     }
+
+
+     /* ================= GALERIA RESPONSIVO ================= */
+    .list-galeria {
+        gap: 20px;
+        width: 90%;
+    }
     
+     /* ================= AGENDAMENTO RESPONSIVO ================= */
+
+     .container-agendamento {
+        width: 100%;
+    }
+
+    .text-agendamento{
+        font-size: 2.5em;
+    }
+
+    .paragrafo-agendamento{
+        font-size: 1.2em;
+        width: 90%;
+    }
+
+    .list-horario{
+        margin: 20px 20px;
+        font-size: 1.2em;
+    }
+
+    .list-horario li{
+    flex-direction:column;
+    gap:5px;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+
+    .horario h3{
+        align-items: center;
+        font-size: 1.8em;
+    }
 }
 
  
