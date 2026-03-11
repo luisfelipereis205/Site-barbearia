@@ -177,12 +177,9 @@ a {
     max-width: 1100px;
     margin: 45px auto;
     padding: 20px 20px;
-    
-
 }
 /* Título da seção serviços */
 .text-servicos{
-
     font-size: 30px;
     letter-spacing: 2px;
     font-family: "Teko", sans-serif;
@@ -194,84 +191,26 @@ a {
     margin-bottom: 30px;
     margin-top: 40px;
 }
-/* Lista de serviços */
-.list-servicos {
-    font-size: 24px;
-
-    display: block;
-    margin-left: 0;
-    margin: 15px;
-}
-/* Preço do serviço */
-.list-servicos .text-price {
-    font-size: 13px;
-
-    color: #E07F00;
-    
-    display: flex;
-    
-    
-}
-/* Nome do serviço */
-.list-servicos .text-name {
-    margin-bottom: 20px;
-
-    display: flex;
-}
-/* Informações adicionais do serviço */
-.list-servicos .servico-info {
-    font-size: 13px;
-    color: #ffffff;
-
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap; /* permite quebrar a linha se necessário */
-    align-items: center;
-    margin-bottom: 25px;
-    
-}
-/* borda abaixo do preço serviço */
 .servicos-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    margin-bottom: 20px;
-
-    border-bottom: 1px solid #ffffff42;
-    width: 90%;
+    border-bottom: 1px #e9e9e9 solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-/* Remove borda do último item */
-.servicos-item:last-child {  /* remove a borda do último item */
-    border-bottom: none;   
+
+.text-name {
+    font-size: 1.1em;
 }
-/* ================= BOTÃO DOS SERVIÇOS ================= */
-.btn-agendar-servico {
-    font-size: 12px;
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-weight: 600;
-    
-    padding: 8px 12px;
-    
-    margin-left: auto;/* Empurra botão para direita */
-
-    border: 1px solid white;
-    border-radius: 6px;
-    
-    background-color: transparent;
-
-
-    transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background-color 0.2s ease;
-
-    text-transform: uppercase;
-    ;
-} 
-/* Hover botão serviço */
-.btn-agendar-servico:hover {
-    background-color: #E07F00; /* dourado/barbearia */
-    transform: translateY(-2px); /* sobe um pouco */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+.text-time {
+    font-size: 0.9em;
+}
+.text-price{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #E07F00;
 }
 
 /* ================= SOBRE ================= */
@@ -838,12 +777,7 @@ a {
     display: flex;
     }
 
-    .btn-agendar-servico {
-    padding: 6px 10px;
-    font-size: 10px;
-    margin-left: auto;
-    transform: translateX(1px);
-    }
+    
 
     /* ================= SOBRE RESPONSIVO ================= */
     
